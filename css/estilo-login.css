@@ -1,0 +1,191 @@
+* {
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+html {
+    background: url(../img/fondo1.png);
+    background-position: center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+    }
+
+
+h1 {
+    font-size: 30px;    
+    margin-top: 10px 0;
+    color: rgb(0,0,0);
+    text-align:center;
+}
+
+
+
+/* Inputs y button */
+
+
+input,
+select{
+    height: 35px;
+    width: 80%;
+    margin: 5px 5px 5px 5px;
+    font-weight: 500; 
+    color: #000;
+    background-color: #fff;
+    padding-left: 10px;
+}
+
+label { 
+    color: rgb(0,0,0);    
+    margin: 20px 5px 20px 5px;
+    position: relative;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600px;
+}
+
+option {
+    padding-left: 10px;
+    background-color: #fff;
+    color: rgb(50,50,50);
+}
+
+button 
+{
+    text-decoration: none;
+    border: none;
+    color: #fff;
+    background-color: #622f13;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    height: auto;
+    padding: 5px 15px;
+    text-align: center;
+    vertical-align: middle;
+}
+button:hover {
+    color: #000;
+    background-color: #F88236;
+}
+
+
+/* Login container */
+
+.img-principal {
+    margin: 0;
+    padding: 0; 
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 3px 3px 10px #000;
+    background-color: #fff;
+}
+
+input[type=radio],
+input[type=checkbox]{
+    border: 0px;
+    width: 2em;
+    height: 2em;
+    margin: 0;
+    font-size: 7px;
+}
+
+
+/* Placeholders */
+
+ ::-webkit-input-placeholder {
+    padding-left: 8px;
+    font-weight: 500; 
+    color: #000;
+}
+
+ :-moz-placeholder {
+    /* Firefox 18- */
+    color: red;
+}
+
+ ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: red;
+}
+
+ :-ms-input-placeholder {
+    color: #333;
+}
+
+
+
+
+#contenedor-login,
+#contenedor-registro,
+#contenedor-socios{
+    padding-top: 17%;
+}
+
+@media(max-width: 991px) and (min-width: 768px)
+{
+    #contenedor-login,
+    #contenedor-registro,
+    #contenedor-socios{
+    padding-top: 35%;
+}
+}
+
+@media (max-width: 767px) and (min-width: 361px)
+{
+    #contenedor-login,
+    #contenedor-registro,
+    #contenedor-socios{
+    padding-top: 45%;
+}
+}
+@media (max-width: 360px) 
+{
+    #contenedor-login,
+    #contenedor-registro,
+    #contenedor-socios{
+    padding-top: 61%;
+}
+}
+
+#contenedor-registro,
+#contenedor-socios {
+    display: none;
+}
+
+img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: auto;
+}
+
+.close-btn, 
+.close-btn-socio {
+    position: absolute;
+    cursor: pointer;
+    top: 5px;
+    right: 5px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 10px;
+    opacity: .8;
+    -webkit-transition: all 2s ease-in-out;
+    -moz-transition: all 2s ease-in-out;
+    -o-transition: all 2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.close-btn:hover,
+.close-btn-socio:hover {
+    opacity: .5;
+}

@@ -1,0 +1,384 @@
+/********************************** SIDEBAR Y NAVBAR****************************************************************/
+html{
+    background-color: #fff;
+}
+body{
+    background-color:#fff;
+
+    }
+
+footer{
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+h1,h2,h3,h4,h5{
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+}
+th{
+    color: #fff;
+}
+
+input, select, label, option, p, span, a, td{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #000;
+    border: none;
+}
+
+.wrapper {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background-color: #fff;
+}
+/*
+.active {
+    background-color: rgb(152,152,152);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #0D0E27;
+}
+*/
+
+.sidebar .sidebar-wrapper ul.nav li.nav-item ul.dropdown-container {
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    display: none;
+    border: none;
+    margin-bottom: 10px;
+
+
+}
+
+.sidebar .sidebar-wrapper ul.nav li.nav-item ul.dropdown-container li {
+    padding: 0 15px;
+    width: 100%;
+}
+
+
+
+.sidebar .sidebar-wrapper ul.nav li.nav-item ul.dropdown-container li.nav-item a.nav-link i{
+    padding-left: 10px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    color: #000;
+    border: none;
+    width: 100%;
+    text-align: left;
+    background-color: rgba(255,255,255,0.6);
+}
+
+.sidebar .sidebar-wrapper ul.nav li.nav-item ul.dropdown-container li.nav-item a.nav-link i:hover{
+    list-style: none;
+    text-decoration: none;
+    font-weight: 700;
+    color: #FF0447;
+    border: none;
+}
+
+
+.sidebar .nav li a {
+    margin: 15px 10px;
+    padding: 0px;
+}
+
+.titulo{
+    color: #000;
+    margin: 40px 10px 25px 10px;
+}
+
+.btn-general, .btn-congreso
+{
+    padding: 8px 15px;
+    text-align: center;
+    vertical-align: middle;
+    margin: 25px;
+    border-radius: 15px;
+    font-weight: 500;
+    font-size: 16px;
+
+}
+
+.btn-general
+{
+    background-color: #622f13;
+    color: #fff;
+}
+
+.btn-congreso
+{
+    background-color: #12151C;
+    color: #fff;
+}
+.btn-general:hover
+{
+    background-color: #F88236;
+    color: #000;
+}
+
+.btn-congreso:hover
+{
+    background-color: #1A2735;
+    color: #fff;
+}
+
+.sidebar .nav li:first-child>a {
+    margin: 15px 10px;
+}
+
+input.form-control, select.form-control, textarea.form-control{
+      background-color: #fff; 
+      border-bottom: 1px dotted rgb(30,30,30);
+      color: #000;
+
+    }
+    option, p{
+      background-color: #fff; 
+      border-bottom: 1px dotted rgb(30,30,30);
+        color: #000;
+    }
+
+    .card{
+        background-color: rgb(255,255,247);
+        border:1.5px solid #F5A88B;
+    }
+    .card-title{
+        color: #000;
+        font-weight: 600;
+    }
+
+.content{
+	background: url(../img/fondo4.png); 
+	background-size: 100% 100%; 
+    background-attachment: fixed;
+
+}
+
+
+/************************************* SESIONES *******************************************************/
+
+.centrado-distribuido {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.centrado-fila {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /*COMPATIBILIDAD CON EXPLORER*/
+    display: -ms-flexbox;
+    -ms-flex-direction: row;
+    -ms-flex-align: center;
+    -ms-flex-pack: center;
+}
+
+.centrado-fila img {
+    max-width: 100%;
+    padding-top: 5px
+}
+
+
+/******************************** PERFIL/DATOS **************************************************************/
+
+.profile_image {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    border: 5px solid #FF0447;
+
+}
+
+
+img.profile_logo {
+    margin-left: 10px;
+    margin-top: 2px;
+    margin-bottom: 4px;
+    width: 110px;
+    border: 4px solid rgb(0,255,254);
+}
+.card-description{
+    text-align: justify;
+}
+
+
+/************************************* CHAT **********************************/
+
+.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 25px;
+    background-color: #FF0447;
+    color: rgb(255,255,247);
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px rgb(190,190,190);
+    z-index: 1;
+    float: right;
+}
+
+.float:hover {
+    text-decoration: none;
+    color: rgb(255,255,247);
+    background-color: #FF681C;
+}
+
+.my-float {
+    margin-top: 16px;
+}
+
+
+/***********************************************************************************/
+
+.popup-box {
+    background-color: #ffffff;
+    border: 1px solid #b0b0b0;
+    bottom: 25px;
+    display: none;
+    height: 350px;
+    width: 295px;
+    position: fixed;
+    right: 1px;
+    z-index: 9999;
+    overflow: hidden;
+}
+
+.popup-box-on {
+    display: block !important;
+}
+
+.popup-box .popup-head {
+    background-color: #fff;
+    clear: both;
+    color: #151A45;
+    display: inline-table;
+    font-size: 18px;
+    width: 100%;
+}
+
+.popup-box .popup-head .popup-head-left {
+    margin: 5px 0 3px 20px;
+    font-weight: 700;
+}
+
+.popup-box .popup-head .popup-head-right button.removeClass {
+    border: none;
+    margin: 5px 30px 5px;
+    width: 10px;
+    height: 10px;
+    padding: 1px;
+}
+
+.popup-box .popup-head .popup-head-right button.removeClass i {
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #151A45;
+}
+
+
+.popup-box .popup-messages {
+    background: white none repeat scroll 0 0;
+    overflow-x: auto;
+}
+
+.direct-chat-messages {
+    overflow-x: auto;
+    transform: translate(0px, 0px);
+}
+
+.popup-messages .direct-chat-messages {
+    padding-left: 20px;
+    height: 320px;
+    border: 0;
+}
+
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile+label {
+    max-width: 80%;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.625rem 1.25rem;
+}
+
+.inputfile+label svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    margin-top: -0.25em;
+    margin-right: 0.25em;
+}
+
+.iborrainputfile {
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'Lato';
+}
+
+/**************************Congreso********************************************************/
+img.poster{
+    margin-top: 20px; 
+    width: 100%;
+}
+ 
+.paposter h2{
+    margin-top: 35px;
+
+
+}
+.paposter p{
+    margin-top: 20px;
+    text-align: justify;
+}
+
+/************************ CONSTRUCCION *******************************************************/
+img.construccion
+      {
+        width: 50%;
+        padding-top: 35px;
+      }
+    @media(max-width: 786px)
+    {
+      img.construccion
+      {
+        width: 100%;
+      }
+    }
+   
+    }
